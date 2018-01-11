@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="log_print_bg">#ffeeeeee</color>
+  <color name="log_accent_debug">#ff2196f3</color>
+  <color name="log_accent_info">#ff4caf50</color>
+  <color name="log_accent_warn">#ffff9800</color>
+  <color name="log_accent_error">#fff44336</color>
+  <color name="log_accent_unknown">#ff9c27b0</color>
+  <color name="log_level_text">#ffffffff</color>
+
+  <color name="text_primary">#333333</color>
+  <color name="text_secondary">#666666</color>
+  <color name="text_hint">#999999</color>
+
+  <color name="telescope_progress">#FF5722</color>
+  <color name="spinner_pop_bg">#ff444444</color>
+  <color name="divider">#ffd8d8d8</color>
+
+</resources>

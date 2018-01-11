@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+  compileSdkVersion rootProject.ext.compileSdkVersion
+
+  defaultConfig {
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.targetSdkVersion
+    versionCode 1
+    versionName "1.0"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  compileOnly rootProject.ext.kotlinLib
+
+  compileOnly rootProject.ext.appcompatV7
+  compileOnly rootProject.ext.supportDesign
+
+  compileOnly rootProject.ext.okio
+
+  compileOnly rootProject.ext.rxJava
+  compileOnly rootProject.ext.rxAndroid
+
+  compileOnly rootProject.ext.timber
+  compileOnly rootProject.ext.processPhoenix
+}
+
+apply from: rootProject.file('gradle/maven-push.gradle')

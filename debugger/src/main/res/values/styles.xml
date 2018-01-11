@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="TextPrimary">
+    <item name="android:textColor">@color/text_primary</item>
+    <item name="android:textSize">@dimen/font_normal</item>
+  </style>
+
+  <style name="TextPrimary.Large" parent="TextPrimary">
+    <item name="android:textSize">@dimen/font_large</item>
+  </style>
+
+  <style name="TextPrimary.Small" parent="TextPrimary">
+    <item name="android:textSize">@dimen/font_small</item>
+  </style>
+
+  <style name="TextSecondary">
+    <item name="android:textColor">@color/text_secondary</item>
+    <item name="android:textSize">@dimen/font_small</item>
+  </style>
+
+  <style name="TextSecondary.Large" parent="TextSecondary">
+    <item name="android:textSize">@dimen/font_normal</item>
+  </style>
+
+  <style name="TextSecondary.Small" parent="TextSecondary">
+    <item name="android:textSize">@dimen/font_smaller</item>
+  </style>
+
+  <style name="TextTertiary">
+    <item name="android:textColor">@color/text_hint</item>
+    <item name="android:textSize">@dimen/font_smaller</item>
+  </style>
+
+  <style name="TextTertiary.Large" parent="TextTertiary">
+    <item name="android:textSize">@dimen/font_small</item>
+  </style>
+
+  <style name="TextTertiary.Small" parent="TextTertiary">
+    <item name="android:textSize">@dimen/font_smallest</item>
+  </style>
+
+  <style name="Button">
+    <item name="android:layout_margin">2dp</item>
+    <item name="android:textColor">@color/text_primary</item>
+    <item name="android:textSize">@dimen/font_small</item>
+  </style>
+</resources>

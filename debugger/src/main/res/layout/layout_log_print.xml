@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.anbillon.debuggerview.LogPrinterLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/log_print_bg"
+    android:orientation="vertical"
+    tools:parentTag="com.anbillon.debuggerview.LogPrinterLayout">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/padding"
+      android:text="@string/log"
+      style="@style/TextPrimary"/>
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/recycler_log_printer"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+
+    <Button
+        android:id="@+id/btn_scroll_to_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:text="@string/scroll_to_top"
+        style="@style/Button"
+        />
+
+    <Button
+        android:id="@+id/btn_scroll_to_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:text="@string/scroll_to_bottom"
+        style="@style/Button"
+        />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:text="@string/clear"
+        style="@style/Button"
+        />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:text="@string/share"
+        style="@style/Button"
+        />
+
+  </LinearLayout>
+
+</com.anbillon.debuggerview.LogPrinterLayout>

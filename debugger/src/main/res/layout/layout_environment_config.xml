@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.anbillon.debuggerview.EnvironmentConfigLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:parentTag="com.anbillon.debuggerview.EnvironmentConfigLayout">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:padding="@dimen/padding">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:text="@string/environment_select_host"
+        style="@style/TextPrimary"/>
+
+    <Spinner
+        android:id="@+id/spinner_endpoint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_weight="1"
+        android:popupBackground="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/debug_drawer_icon_edit"/>
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@color/divider"/>
+
+  <LinearLayout
+      android:id="@+id/layout_mock_delay"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:padding="@dimen/padding"
+      android:visibility="gone"
+      tools:visibility="visible">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:text="@string/environment_select_mock_delay"
+        style="@style/TextPrimary"/>
+
+    <Spinner
+        android:id="@+id/spinner_mock_delay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:popupBackground="@android:color/white"/>
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@color/divider"/>
+
+  <TextView
+      android:id="@+id/system_info"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="@dimen/padding"
+      android:text="@string/endpoint_system_info"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@color/divider"/>
+
+</com.anbillon.debuggerview.EnvironmentConfigLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="debug_drawer_endpoint_name">请输入你自定义环境的名称（只支持数字和字母）。\n例如：test1</string>
+  <string name="debug_drawer_input_name">请输入自定义环境名称</string>
+  <string name="debug_drawer_network_endpoint_description">输入您想要连接的API URL地址。\n例如：https://bob-loblaw.local/1.0</string>
+  <string name="debug_custom_endpoint_dialog_title">请设置URL地址</string>
+  <string name="debug_drawer_network_crawler_description">输入您想要连接的爬虫 URL地址。</string>
+  <string name="debug_drawer_network_help_description">输入您想要连接的帮助中心 URL地址。</string>
+  <string name="debug_endpoint_protocol">http://</string>
+  <string name="debug_cancel">取消</string>
+  <string name="debug_confirm">确定</string>
+  <string name="debug_submit">提交</string>
+  <string name="debug_feedback">反馈问题</string>
+</resources>
